@@ -1,7 +1,29 @@
-body {
-  background: @primary;
+/**************************
+        Hero Section
+/**************************/
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: @light_blue;
+}
+/*----------------
+        Text
+------------------*/
+.hero-section > .text {
+  position: relative;
+  left: 10rem;
 }
 
-h1 {
-  color: @secondary;
+/* Mega Header */
+.hero-section > .text > h1 {
+  font-size: 7.5rem;
+}
+
+/* Secondary Header */
+.hero-section > .text > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }

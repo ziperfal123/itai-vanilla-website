@@ -1,4 +1,20 @@
 /* Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1rem;
+}
 /* Utils */
 /****************************
         Colors plate
@@ -12,11 +28,40 @@
 /*------------------
        Fonts
 ------------------*/
-/* Pages */
-body {
-  background: hsl(191, 87%, 50%);
+/* Components */
+/****************************
+        Primary Button
+*****************************/
+button.primary-button {
+  height: 100px;
+  width: 100px;
+  background: red;
 }
-h1 {
-  color: hsl(191, 86%, 14%);
-  font-size: 100px;
+/* Pages */
+/**************************
+        Hero Section
+/**************************/
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: hsl(190, 100%, 88%);
+}
+/*----------------
+        Text
+------------------*/
+.hero-section > .text {
+  position: relative;
+  left: 10rem;
+}
+/* Mega Header */
+.hero-section > .text > h1 {
+  font-size: 7.5rem;
+}
+/* Secondary Header */
+.hero-section > .text > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
