@@ -8,35 +8,68 @@
   height: 100vh;
   width: 100vw;
 }
-/*----------------
-        Text
-------------------*/
+/*---------------------
+    Personal Details 
+-----------------------*/
 .hero-section > .personal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 50%;
   background: @light_blue;
 }
+/* Text */
 .hero-section > .personal-details > .text {
   position: relative;
-  top: 45%;
+  bottom: 5%;
   left: 10%;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
 }
 
-/* Mega Header */
+/*-- Mega Header --*/
 .hero-section > .personal-details > .text > h1 {
   font-size: 7.5rem;
 }
 
-/* Secondary Header */
+/*-- Secondary Header --*/
 .hero-section > .personal-details > .text > h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
-/*--------------------
-      Itai Image
-----------------------*/
+/* Social Networks */
+.hero-section > .personal-details > .social-networks {
+  position: relative;
+  left: 10%;
+}
+/*-- Social Networks --*/
+.hero-section > .personal-details > .social-networks > svg {
+  margin-right: 14px;
+  width: 38;
+  height: 38px;
+  cursor: pointer;
+
+  &.instegram {
+    position: relative;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    &.facebook {
+      fill: #1877f2;
+    }
+    &.linkedin {
+      fill: #007bb5;
+    }
+  }
+}
+
+/*---------------------
+       Itai Image
+-----------------------*/
 .hero-section > .itai-profile {
   position: absolute;
   top: 48%;
@@ -46,9 +79,9 @@
   width: 340px;
   border-radius: 50%;
 }
-/*--------------------
+/*---------------------
     Background Image
-----------------------*/
+-----------------------*/
 .hero-section > .bg-image {
   width: 55%;
   height: 100%;

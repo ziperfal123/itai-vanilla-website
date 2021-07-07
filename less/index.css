@@ -29,13 +29,57 @@ h1 {
        Fonts
 ------------------*/
 /* Components */
-/****************************
-        Primary Button
-*****************************/
-button.primary-button {
-  height: 100px;
-  width: 100px;
-  background: yellow;
+/*********************
+        Button
+**********************/
+button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  height: 3rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 22px 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear;
+  /*-- Hover --*/
+  /*-- Selected --*/
+  /*-- Focus, Active  --*/
+}
+button.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+button.btn:active {
+  transform: translateY(0px);
+}
+button.btn:focus,
+button.btn:active {
+  background: none;
+  border: none;
+  outline: none;
+}
+/*---------------------
+         Types
+----------------------*/
+/* Primary */
+button.btn.primary {
+  color: hsl(0, 0%, 100%);
+  background: hsl(191, 87%, 50%);
+  letter-spacing: 0.3rem;
+}
+/* States */
+/*-- Focus, Active  --*/
+button.btn.primary:focus,
+button.btn.primary:active {
+  background: hsl(191, 87%, 50%);
+}
+/*-- Hover --*/
+button.btn.primary:hover {
+  background-color: hsl(191, 87%, 42%);
 }
 /* Pages */
 /**************************
@@ -43,25 +87,79 @@ button.primary-button {
 /**************************/
 .hero-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
+}
+/*---------------------
+    Personal Details 
+-----------------------*/
+.hero-section > .personal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
   background: hsl(190, 100%, 88%);
 }
-/*----------------
-        Text
-------------------*/
-.hero-section > .text {
+/* Text */
+.hero-section > .personal-details > .text {
   position: relative;
-  left: 10rem;
+  bottom: 5%;
+  left: 10%;
 }
-/* Mega Header */
-.hero-section > .text > h1 {
+/*-- Mega Header --*/
+.hero-section > .personal-details > .text > h1 {
   font-size: 7.5rem;
 }
-/* Secondary Header */
-.hero-section > .text > h2 {
+/*-- Secondary Header --*/
+.hero-section > .personal-details > .text > h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
+}
+/* Social Networks */
+.hero-section > .personal-details > .social-networks {
+  position: relative;
+  left: 10%;
+}
+/*-- Social Networks --*/
+.hero-section > .personal-details > .social-networks > svg {
+  margin-right: 14px;
+  width: 38;
+  height: 38px;
+  cursor: pointer;
+}
+.hero-section > .personal-details > .social-networks > svg.instegram {
+  position: relative;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+}
+.hero-section > .personal-details > .social-networks > svg:hover.facebook {
+  fill: #1877f2;
+}
+.hero-section > .personal-details > .social-networks > svg:hover.linkedin {
+  fill: #007bb5;
+}
+/*---------------------
+       Itai Image
+-----------------------*/
+.hero-section > .itai-profile {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+}
+/*---------------------
+    Background Image
+-----------------------*/
+.hero-section > .bg-image {
+  width: 55%;
+  height: 100%;
+  background-image: url("/assets/israel-background-color.jpeg");
+  background-size: cover;
 }
