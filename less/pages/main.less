@@ -3,27 +3,43 @@
 /**************************/
 .hero-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
-  background: @light_blue;
 }
 /*----------------
         Text
 ------------------*/
-.hero-section > .text {
+.hero-section > .personal-details {
+  height: 100%;
+  width: 50%;
+  background: @light_blue;
+}
+.hero-section > .personal-details > .text {
   position: relative;
-  left: 10rem;
+  top: 45%;
+  left: 15%;
+  transform: translateY(-50%);
 }
 
 /* Mega Header */
-.hero-section > .text > h1 {
+.hero-section > .personal-details > .text > h1 {
   font-size: 7.5rem;
 }
 
 /* Secondary Header */
-.hero-section > .text > h2 {
+.hero-section > .personal-details > .text > h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
+}
+
+/*----------------
+        Image
+------------------*/
+.hero-section > .img {
+  width: 60%;
+  height: 100%;
+  background-image: url("/assets/israel-background-color.jpeg");
+  background-size: cover;
 }

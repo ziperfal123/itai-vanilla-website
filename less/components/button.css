@@ -1,0 +1,53 @@
+/*********************
+        Button
+**********************/
+button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  height: 3rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  padding: calc(var(--default-space) * 2) var(--default-space);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear;
+}
+/* States */
+/*-- Hover --*/
+button.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+/*-- Selected --*/
+button.btn:active {
+  transform: translateY(0px);
+}
+/*-- Focus, Active  --*/
+button.btn:focus,
+button.btn:active {
+  background: none;
+  border: none;
+  outline: none;
+}
+/*---------------------
+         Types
+----------------------*/
+/* Primary */
+button.btn.primary {
+  color: var(--text-color-light);
+  background: var(--color-primary-1);
+  letter-spacing: 0.3rem;
+}
+/* States */
+/*-- Focus, Active  --*/
+button.btn.primary:focus,
+button.btn.primary:active {
+  background: var(--color-primary-1);
+}
+/*-- Hover --*/
+button.btn.primary:hover {
+  background-color: var(--color-primary-dark-2);
+}
