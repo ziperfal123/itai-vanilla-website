@@ -187,11 +187,11 @@ button.btn.primary:hover {
 -----------------------*/
 .hero-section > .itai-profile {
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 340px;
-  width: 340px;
+  height: 36rem;
+  width: 36rem;
   border-radius: 50%;
 }
 /*---------------------
