@@ -51,6 +51,7 @@ button.btn {
   padding: 2.2rem 3rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
   transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
   /*-- Selected --*/
   /*-- Focus, Active  --*/
@@ -165,6 +166,7 @@ button.btn.primary:hover {
   bottom: 5%;
   left: 10%;
 }
+/*-- Social Networks --*/
 .hero-section > .personal-details > .contact-area > .social-networks {
   position: relative;
   top: 2.6rem;
