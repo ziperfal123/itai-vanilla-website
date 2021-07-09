@@ -1,8 +1,8 @@
-.hoverEffect {
+.hoverEffect(@spreadRadius: 0) {
   transition: transform 0.2s linear, background-color 0.1s linear,
     box-shadow 0.15s linear, fill 0.075s linear;
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 6px @spreadRadius rgba(0, 0, 0, 0.2);
   }
 }

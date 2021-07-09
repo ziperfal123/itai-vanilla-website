@@ -38,13 +38,6 @@ h2 {
 /*------------------
        Fonts
 ------------------*/
-.hoverEffect {
-  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
-}
-.hoverEffect:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
-}
 /* Components */
 /*********************
         Button
@@ -68,7 +61,7 @@ button.btn {
 }
 button.btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2);
 }
 button.btn:active {
   transform: translateY(0px);
@@ -110,15 +103,13 @@ button.btn.primary:hover {
   width: 42px;
   height: 42px;
   cursor: pointer;
+  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
 }
 .social-networks > svg.instegram {
   width: 44px;
   height: 44px;
 }
 .social-networks > svg:hover {
-  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
-}
-.social-networks > svg:hover:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
 }
