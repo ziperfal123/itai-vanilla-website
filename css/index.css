@@ -169,10 +169,12 @@ article.service-card > svg.camel {
         Header
 ----------------------*/
 article.service-card > h3 {
-  color: hsl(0, 0%, 100%);
+  white-space: nowrap;
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
   letter-spacing: 3px;
-  margin-bottom: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
 }
 /*---------------------
           Text
@@ -263,6 +265,9 @@ section.services {
   width: 100%;
   background: hsl(191, 87%, 50%);
 }
+/*---------------------
+    Section content
+-----------------------*/
 section.services > .section-content {
   display: flex;
   flex-direction: column;
@@ -271,6 +276,7 @@ section.services > .section-content {
   top: 4rem;
   height: calc(100% - 4rem);
 }
+/* Articles */
 section.services > .section-content > .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -284,7 +290,41 @@ section.services > .section-content > .articles {
           About Section
 ***********************************/
 section.about {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background: hsl(0, 0%, 96%);
+}
+/*---------------------
+    Section content
+-----------------------*/
+section.about > .section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+/* Image */
+section.about > .section-content > img {
+  height: 85%;
+}
+/* Text */
+section.about > .section-content > .about-text {
+  width: 60%;
+  height: 80%;
+}
+/*-- Header --*/
+section.about > .section-content > .about-text > h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+/*-- Paragraph --*/
+section.about > .section-content > .about-text > p {
+  width: 80%;
+  margin-top: 2.8rem;
+  padding: 0 8rem;
+  line-height: 1.7;
+  font-size: 2rem;
+  color: hsl(211, 47%, 29%);
 }
