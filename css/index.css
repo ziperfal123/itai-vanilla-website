@@ -1,10 +1,7 @@
 /* Base */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
 }
 html {
   font-size: 62.5%;
@@ -61,7 +58,7 @@ button.btn {
   border: none;
   text-transform: uppercase;
   border-radius: 5px;
-  padding: 2.2rem 3rem;
+  padding: 1.2rem 3rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-size: 1.5rem;
@@ -143,7 +140,7 @@ button.btn.primary:hover {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 /*---------------------
     Personal Details 
@@ -153,7 +150,7 @@ button.btn.primary:hover {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 45%;
   background: hsl(190, 100%, 88%);
 }
 /* Text */
@@ -205,4 +202,12 @@ button.btn.primary:hover {
   height: 100%;
   background-image: url("/assets/israel-background-color.jpeg");
   background-size: cover;
+}
+/**************************
+     Services Section
+/**************************/
+.services-section {
+  height: 100vh;
+  width: 100%;
+  background: red;
 }
