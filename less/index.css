@@ -1,10 +1,7 @@
 /* Base */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
 }
 html {
   font-size: 62.5%;
@@ -14,6 +11,19 @@ body {
 }
 h1 {
   font-size: 1rem;
+}
+* {
+  font-family: "Red Hat Text", sans-serif;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 7.5rem;
+  letter-spacing: 0.3rem;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
 }
 /* Utils */
 /****************************
@@ -28,10 +38,6 @@ h1 {
 /*------------------
        Fonts
 ------------------*/
-.red {
-  background: red;
-  color: red;
-}
 /* Components */
 /*********************
         Button
@@ -45,17 +51,17 @@ button.btn {
   border: none;
   text-transform: uppercase;
   border-radius: 5px;
-  padding: 22px 16px;
+  padding: 1.2rem 3rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear;
-  /*-- Hover --*/
+  font-size: 1.5rem;
+  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
   /*-- Selected --*/
   /*-- Focus, Active  --*/
 }
 button.btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2);
 }
 button.btn:active {
   transform: translateY(0px);
@@ -88,6 +94,40 @@ button.btn.primary:hover {
 /*********************
     Social Networks
 **********************/
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+}
+/*-- SVG --*/
+.social-networks > svg {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition: transform 0.2s linear, background-color 0.1s linear, box-shadow 0.15s linear, fill 0.075s linear;
+}
+.social-networks > svg.instegram {
+  width: 44px;
+  height: 44px;
+}
+.social-networks > svg:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+.social-networks > svg:hover.facebook {
+  fill: #1877f2;
+}
+.social-networks > svg:hover.instegram {
+  fill: brown;
+}
+.social-networks > svg:hover.linkedin {
+  fill: #007bb5;
+}
+/*********************
+        Button
+**********************/
+h2.section-header {
+  background: red;
+}
 /* Pages */
 /**************************
         Hero Section
@@ -97,7 +137,7 @@ button.btn.primary:hover {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 /*---------------------
     Personal Details 
@@ -107,7 +147,7 @@ button.btn.primary:hover {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 45%;
   background: hsl(190, 100%, 88%);
 }
 /* Text */
@@ -115,50 +155,40 @@ button.btn.primary:hover {
   position: relative;
   bottom: 5%;
   left: 10%;
+  width: fit-content;
 }
 /*-- Mega Header --*/
 .hero-section > .personal-details > .text > h1 {
-  font-size: 7.5rem;
+  margin-bottom: 0.5rem;
 }
 /*-- Secondary Header --*/
 .hero-section > .personal-details > .text > h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-/* Social Networks */
-.hero-section > .personal-details > .social-networks {
   position: relative;
+  left: 6px;
+  margin-bottom: 3.5rem;
+}
+/* Contact Area */
+.hero-section > .personal-details > .contact-area {
+  width: fit-content;
+  position: relative;
+  bottom: 5%;
   left: 10%;
 }
 /*-- Social Networks --*/
-.hero-section > .personal-details > .social-networks > svg {
-  margin-right: 14px;
-  width: 38;
-  height: 38px;
-  cursor: pointer;
-}
-.hero-section > .personal-details > .social-networks > svg.instegram {
+.hero-section > .personal-details > .contact-area > .social-networks {
   position: relative;
-  top: 2px;
-  width: 40px;
-  height: 40px;
-}
-.hero-section > .personal-details > .social-networks > svg:hover.facebook {
-  fill: #1877f2;
-}
-.hero-section > .personal-details > .social-networks > svg:hover.linkedin {
-  fill: #007bb5;
+  top: 2.6rem;
 }
 /*---------------------
        Itai Image
 -----------------------*/
 .hero-section > .itai-profile {
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 340px;
-  width: 340px;
+  height: 36rem;
+  width: 36rem;
   border-radius: 50%;
 }
 /*---------------------
@@ -169,4 +199,12 @@ button.btn.primary:hover {
   height: 100%;
   background-image: url("/assets/israel-background-color.jpeg");
   background-size: cover;
+}
+/**************************
+     Services Section
+/**************************/
+.services-section {
+  height: 100vh;
+  width: 100%;
+  background: hsl(191, 87%, 50%);
 }

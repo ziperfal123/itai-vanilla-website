@@ -122,6 +122,20 @@ button.btn.primary:hover {
 .social-networks > svg:hover.linkedin {
   fill: #007bb5;
 }
+/*********************
+        Button
+**********************/
+h2.section-header {
+  position: relative;
+  top: 4.5rem;
+  text-align: center;
+  font-size: 3.8rem;
+  color: hsl(191, 86%, 14%);
+  letter-spacing: 3px;
+}
+h2.section-header.light {
+  color: hsl(0, 0%, 100%);
+}
 /* Pages */
 /**************************
         Hero Section
