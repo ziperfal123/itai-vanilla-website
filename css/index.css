@@ -98,7 +98,9 @@ button.btn.primary:hover {
   display: flex;
   justify-content: space-around;
 }
-/*-- SVG --*/
+/*---------------------
+          SVG
+----------------------*/
 .social-networks > svg {
   width: 42px;
   height: 42px;
@@ -126,15 +128,60 @@ button.btn.primary:hover {
         Button
 **********************/
 h2.section-header {
-  position: relative;
-  top: 4.5rem;
   text-align: center;
   font-size: 3.8rem;
   color: hsl(191, 86%, 14%);
   letter-spacing: 3px;
 }
+/*---------------------
+         Themes
+----------------------*/
+/* Light */
 h2.section-header.light {
   color: hsl(0, 0%, 100%);
+}
+/*********************
+     Service Card
+**********************/
+article.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  padding: 10px;
+}
+/*---------------------
+          SVG
+----------------------*/
+article.service-card > svg {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  fill: hsl(0, 0%, 100%);
+}
+/* Camel icon */
+article.service-card > svg.camel {
+  position: relative;
+  top: 0.8rem;
+  right: 1.5rem;
+}
+/*---------------------
+        Header
+----------------------*/
+article.service-card > h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+/*---------------------
+          Text
+----------------------*/
+article.service-card > p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.7;
 }
 /* Pages */
 /**************************
@@ -211,8 +258,25 @@ h2.section-header.light {
 /**************************
      Services Section
 /**************************/
-.services-section {
+section.services-section {
   height: 100vh;
   width: 100%;
   background: hsl(191, 87%, 50%);
+}
+section.services-section > .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+  height: calc(100% - 4rem);
+}
+section.services-section > .section-content > .articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 6rem;
+  justify-items: center;
+  width: 90%;
+  margin-top: 4.5rem;
 }

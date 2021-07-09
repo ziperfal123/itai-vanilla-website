@@ -1,0 +1,21 @@
+/*********************
+     Service Card
+**********************/
+article.service-card {
+  width: 20rem;
+  height: 25rem;
+  background: red;
+}
+/*---------------------
+        Header
+----------------------*/
+article.service-card > h3 {
+  font-size: 3rem;
+}
+/*---------------------
+          SVG
+----------------------*/
+article.service-card > img.icon {
+  width: 4rem;
+  height: 4rem;
+}

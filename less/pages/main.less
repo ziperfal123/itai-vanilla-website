@@ -77,8 +77,27 @@
 /**************************
      Services Section
 /**************************/
-.services-section {
+section.services-section {
   height: 100vh;
   width: 100%;
   background: @primary;
+}
+
+section.services-section > .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+  height: calc(100% - 4rem);
+}
+
+section.services-section > .section-content > .articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 6rem;
+  justify-items: center;
+  width: 90%;
+  margin-top: 4.5rem;
 }

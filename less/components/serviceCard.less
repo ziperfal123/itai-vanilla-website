@@ -1,0 +1,46 @@
+/*********************
+     Service Card
+**********************/
+article.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  padding: 10px;
+}
+
+/*---------------------
+          SVG
+----------------------*/
+article.service-card > svg {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  fill: @white;
+}
+/* Camel icon */
+article.service-card > svg.camel {
+  position: relative;
+  top: 0.8rem;
+  right: 1.5rem;
+}
+
+/*---------------------
+        Header
+----------------------*/
+article.service-card > h3 {
+  color: @header_primary_light;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+
+/*---------------------
+          Text
+----------------------*/
+article.service-card > p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: @white;
+  line-height: 1.7;
+}

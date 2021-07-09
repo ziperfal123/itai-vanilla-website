@@ -126,6 +126,18 @@ button.btn.primary:hover {
         Button
 **********************/
 h2.section-header {
+  text-align: center;
+  font-size: 3.8rem;
+  color: hsl(191, 86%, 14%);
+  letter-spacing: 3px;
+}
+h2.section-header.light {
+  color: hsl(0, 0%, 100%);
+}
+/*********************
+    Social Networks
+**********************/
+.service-card {
   background: red;
 }
 /* Pages */
@@ -203,8 +215,12 @@ h2.section-header {
 /**************************
      Services Section
 /**************************/
-.services-section {
+section.services-section {
   height: 100vh;
   width: 100%;
   background: hsl(191, 87%, 50%);
+}
+section.services-section > .section-content {
+  position: relative;
+  top: 4rem;
 }
