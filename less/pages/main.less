@@ -1,7 +1,7 @@
-/**************************
-        Hero Section
-/**************************/
-.hero-section {
+/***********************************
+            Hero Section
+/***********************************/
+main.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 /*---------------------
     Personal Details 
 -----------------------*/
-.hero-section > .personal-details {
+main.hero > .personal-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
   background: @light_blue;
 }
 /* Text */
-.hero-section > .personal-details > .text {
+main.hero > .personal-details > .text {
   position: relative;
   bottom: 5%;
   left: 10%;
@@ -28,26 +28,26 @@
 }
 
 /*-- Mega Header --*/
-.hero-section > .personal-details > .text > h1 {
+main.hero > .personal-details > .text > h1 {
   margin-bottom: 0.5rem;
 }
 
 /*-- Secondary Header --*/
-.hero-section > .personal-details > .text > h2 {
+main.hero > .personal-details > .text > h2 {
   position: relative;
   left: 6px;
   margin-bottom: 3.5rem;
 }
 
 /* Contact Area */
-.hero-section > .personal-details > .contact-area {
+main.hero > .personal-details > .contact-area {
   width: fit-content;
   position: relative;
   bottom: 5%;
   left: 10%;
 }
 /*-- Social Networks --*/
-.hero-section > .personal-details > .contact-area > .social-networks {
+main.hero > .personal-details > .contact-area > .social-networks {
   position: relative;
   top: 2.6rem;
 }
@@ -55,7 +55,7 @@
 /*---------------------
        Itai Image
 -----------------------*/
-.hero-section > .itai-profile {
+main.hero > .itai-profile {
   position: absolute;
   top: 49%;
   left: 50%;
@@ -67,23 +67,23 @@
 /*---------------------
     Background Image
 -----------------------*/
-.hero-section > .bg-image {
+main.hero > .bg-image {
   width: 55%;
   height: 100%;
   background-image: url("/assets/israel-background-color.jpeg");
   background-size: cover;
 }
 
-/**************************
-     Services Section
-/**************************/
-section.services-section {
+/***********************************
+          Services Section
+***********************************/
+section.services {
   height: 100vh;
   width: 100%;
   background: @primary;
 }
 
-section.services-section > .section-content {
+section.services > .section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +92,7 @@ section.services-section > .section-content {
   height: calc(100% - 4rem);
 }
 
-section.services-section > .section-content > .articles {
+section.services > .section-content > .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -100,4 +100,13 @@ section.services-section > .section-content > .articles {
   justify-items: center;
   width: 90%;
   margin-top: 4.5rem;
+}
+
+/***********************************
+          About Section
+***********************************/
+section.about {
+  height: 100vh;
+  width: 100%;
+  background: @grey;
 }
