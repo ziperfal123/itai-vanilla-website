@@ -1,0 +1,25 @@
+/*********************
+    Social Networks
+**********************/
+/*-- SVG --*/
+.social-networks > svg {
+  margin-right: 14px;
+  width: 38;
+  height: 38px;
+  cursor: pointer;
+}
+.social-networks > svg.instegram {
+  position: relative;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+}
+.social-networks > svg:hover.facebook {
+  fill: #1877f2;
+}
+.social-networks > svg:hover.instegram {
+  fill: brown;
+}
+.social-networks > svg:hover.linkedin {
+  fill: #007bb5;
+}

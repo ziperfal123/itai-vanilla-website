@@ -10,17 +10,11 @@ button.btn {
   border: none;
   text-transform: uppercase;
   border-radius: 5px;
-  padding: 22px 16px;
+  padding: 2.2rem 3rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s linear, background-color 0.1s linear,
-    box-shadow 0.15s linear;
+  .hoverEffect();
 
-  /*-- Hover --*/
-  &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
-  }
   /*-- Selected --*/
   &:active {
     transform: translateY(0px);

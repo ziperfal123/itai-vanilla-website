@@ -28,6 +28,10 @@ h1 {
 /*------------------
        Fonts
 ------------------*/
+.red {
+  background: red;
+  color: red;
+}
 /* Components */
 /*********************
         Button
@@ -81,6 +85,9 @@ button.btn.primary:active {
 button.btn.primary:hover {
   background-color: hsl(191, 87%, 42%);
 }
+/*********************
+    Social Networks
+**********************/
 /* Pages */
 /**************************
         Hero Section

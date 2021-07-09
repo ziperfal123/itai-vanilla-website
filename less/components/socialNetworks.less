@@ -1,0 +1,31 @@
+/*********************
+    Social Networks
+**********************/
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+}
+/*-- SVG --*/
+.social-networks > svg {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+
+  &.instegram {
+    width: 44px;
+    height: 44px;
+  }
+
+  &:hover {
+    .hoverEffect();
+    &.facebook {
+      fill: #1877f2;
+    }
+    &.instegram {
+      fill: brown;
+    }
+    &.linkedin {
+      fill: #007bb5;
+    }
+  }
+}
