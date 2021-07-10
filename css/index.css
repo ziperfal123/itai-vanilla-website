@@ -186,6 +186,31 @@ article.service-card > p {
   line-height: 1.7;
 }
 /* Pages */
+.scroll span {
+  position: fixed;
+  bottom: 5.5rem;
+  left: 1.3rem;
+  font-size: 1.4rem;
+  writing-mode: vertical-lr;
+  letter-spacing: 4px;
+}
+.scroll > svg {
+  position: fixed;
+  left: 0.78rem;
+  bottom: 1.7rem;
+  animation: arrowAnimation 1.1s ease-in-out infinite;
+}
+@keyframes arrowAnimation {
+  0% {
+    height: 2.4rem;
+  }
+  50% {
+    height: 3.2rem;
+  }
+  100% {
+    height: 2.4rem;
+  }
+}
 /***********************************
             Hero Section
 /***********************************/
